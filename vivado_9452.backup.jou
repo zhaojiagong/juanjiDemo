@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 26 14:25:26 2023
+# Process ID: 9452
+# Current directory: E:/FPGA/Project/juanjiDemo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12532 E:\FPGA\Project\juanjiDemo\juanjiDemo.xpr
+# Log file: E:/FPGA/Project/juanjiDemo/vivado.log
+# Journal file: E:/FPGA/Project/juanjiDemo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/Project/juanjiDemo/juanjiDemo.xpr
+update_compile_order -fileset sources_1
+file mkdir E:/FPGA/Project/juanjiDemo/juanjiDemo.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/FPGA/Project/juanjiDemo/juanjiDemo.srcs/sim_1/new/fliter_sim.v w ]
+add_files -fileset sim_1 E:/FPGA/Project/juanjiDemo/juanjiDemo.srcs/sim_1/new/fliter_sim.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source fliter_sim.tcl
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+save_wave_config {E:/FPGA/Project/juanjiDemo/juanjiDemo.sim/sim_1/behav/xsim/fliter_sim_behav.wcfg}
+add_files -fileset sim_1 -norecurse E:/FPGA/Project/juanjiDemo/juanjiDemo.sim/sim_1/behav/xsim/fliter_sim_behav.wcfg
+set_property xsim.view E:/FPGA/Project/juanjiDemo/juanjiDemo.sim/sim_1/behav/xsim/fliter_sim_behav.wcfg [get_filesets sim_1]
+close_sim
